@@ -75,7 +75,7 @@ namespace FishingFun
             WindowSizeChangedTimer.Start();
         }
 
-        private void SizeChangedTimer_Elapsed(object sender, ElapsedEventArgs e)
+        private void SizeChangedTimer_Elapsed(object? sender, ElapsedEventArgs e)
         {
             this.Dispatch(() =>
             {

@@ -91,7 +91,7 @@ namespace FishingFun
             return fish;
         }
 
-        private void MoveFishes(object sender, ElapsedEventArgs e)
+        private void MoveFishes(object? sender, ElapsedEventArgs e)
         {
             Dispatch(() =>
             {
