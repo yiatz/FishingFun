@@ -39,6 +39,16 @@ namespace FishingFun
             }, 500, 25);
         }
 
+        public void SetStrikeValue(int strikeValue)
+        {
+            this.strikeValue = strikeValue;
+        }
+
+        public int GetStrikeValue()
+        {
+            return this.strikeValue;
+        }
+
         public bool IsBite(Point currentBobberPosition)
         {
             if (!yPositions.Contains(currentBobberPosition.Y))

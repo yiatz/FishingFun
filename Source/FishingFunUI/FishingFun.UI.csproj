@@ -59,6 +59,7 @@
     <ProjectReference Include="..\FishingFunBot\FishingFun.Bot.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
     <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
     <PackageReference Include="log4net" Version="2.0.12" />
     <PackageReference Include="MaterialDesignColors" Version="2.0.0" />

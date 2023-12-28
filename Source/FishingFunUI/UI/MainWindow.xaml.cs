@@ -93,7 +93,7 @@ namespace FishingFun
 
         private void Stop_Click(object sender, RoutedEventArgs e) => bot?.Stop();
 
-        private void Settings_Click(object sender, RoutedEventArgs e) => new ColourConfiguration(this.pixelClassifier).Show();
+        private void Settings_Click(object sender, RoutedEventArgs e) => new ColourConfiguration(this.pixelClassifier, this.biteWatcher).Show();
 
         private void CastKey_Click(object sender, RoutedEventArgs e) => this.KeyChooser.Focus();
 

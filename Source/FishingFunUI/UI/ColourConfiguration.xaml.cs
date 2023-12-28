@@ -9,6 +9,7 @@ namespace FishingFun
     public partial class ColourConfiguration : System.Windows.Window
     {
         private readonly IPixelClassifier pixelClassifier;
+        private readonly IBiteWatcher biteWatcher;
 
         private Bitmap ScreenCapture = new Bitmap(1, 1);
 
@@ -41,9 +42,22 @@ namespace FishingFun
             }
         }
 
-        public ColourConfiguration(IPixelClassifier pixelClassifier)
+        public int ReelDepth
+        {
+            get
+            {
+                return this.biteWatcher.GetStrikeValue();
+            }
+            set
+            {
+                this.biteWatcher.SetStrikeValue(value);
+            }
+        }
+
+        public ColourConfiguration(IPixelClassifier pixelClassifier, IBiteWatcher biteWatcher)
         {
             this.pixelClassifier = pixelClassifier;
+            this.biteWatcher = biteWatcher;
             FindColourValue = 100;
 
             InitializeComponent();
